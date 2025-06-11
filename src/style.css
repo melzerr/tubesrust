@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-btn {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #efefef;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.humidity {
+  grid-column: 1 / 2;
+  font-size: 1.2rem;
+  border: 2px solid #00aaff;
+}
+
+.humidity p {
+  font-size: 2.5rem;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.status {
+  background-color: #faffd2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.status p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.lokasi {
+  background-color: #faffd2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.lokasi p {
+  font-size: 1.5rem;
+  color: green;
+}
+
+.chart {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}

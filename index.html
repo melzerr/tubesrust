@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lembab - Dashboard</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="src/logo2.png" alt="Logo" />
+          <h2>Lembab</h2>
+        </div>
+        <nav>
+          <button class="nav-btn">Home</button>
+          <a href="src/riwayat.html">
+            <button class="nav-btn">Riwayat</button>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <span class="username">Melodya Sembiring</span>
+          <img class="avatar" src="src/avatar.png" alt="Avatar" />
+          <!-- tambah link gambar avatar -->
+        </header>
+
+        <section class="dashboard">
+          <div class="box humidity">
+            <h3>Tingkat Kelembaban</h3>
+            <p><span id="humidity">60%</span></p>
+          </div>
+          <div class="box status">
+            <h3>STATUS</h3>
+            <p id="status">AMAN</p>
+          </div>
+          <div class="box lokasi">
+            <h3>LOKASI</h3>
+            <p id="lokasi">Surabaya<br />Barat</p>
+          </div>
+          <div class="box chart">
+            <canvas id="chart"></canvas>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lembab - Riwayat</title>
+    <link rel="stylesheet" href="riwayat-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="logo2.png" alt="Logo" />
+          <!-- tambah link gambar logo -->
+          <h2>Lembab</h2>
+        </div>
+        <nav>
+          <a href="../index.html">
+            <button class="nav-btn">Home</button>
+          </a>
+          <button class="nav-btn">Riwayat</button>
+        </nav>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <span class="username">Melodya Sembiring</span>
+          <img class="avatar" src="avatar.png" alt="Avatar" />
+          <!-- tambah link gambar avatar -->
+        </header>
+        <section class="content">
+          <h1 class="page-title">Riwayat</h1>
+          <div class="table-container">
+            <div class="table-header">Riwayat Pengukuran</div>
+            <table id="riwayatTable">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Lokasi</th>
+                  <th>Tingkat Kelembaban</th>
+                  <th>Status</th>
+                  <th>Tanggal</th>
+                  <th>Waktu</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <!-- Data akan diisi oleh JavaScript -->
+              </tbody>
+            </table>
+            <div id="emptyState" class="empty-state" style="display: none">
+              <div class="icon">📊</div>
+              <h3>Belum Ada Riwayat</h3>
+              <p>Riwayat pengukuran kelembaban akan ditampilkan di sini</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="riwayat-script.js"></script>
+  </body>
+</html>
